@@ -11,6 +11,7 @@ public class Main {
 
     // TODO complete this main program
     // 1. create a WordCounter instance
+
     // 2. use this to count the words in the input
     // 3. determine the size of the resulting map
     // 4. create an ArrayList of that size and
