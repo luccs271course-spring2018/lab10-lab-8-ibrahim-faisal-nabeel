@@ -2,11 +2,10 @@ package edu.luc.cs271.wordcount;
 
 import static org.junit.Assert.*;
 
+import java.util.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.*;
 
 public class TestWordCounter {
 
@@ -32,8 +31,6 @@ public class TestWordCounter {
   public void testGetCountEmpty() {
     // TODO verify that the SUT initially returns an empty map
     assertEquals(fixture.getCounts(), Collections.emptyMap());
-
-
   }
 
   @Test
@@ -43,7 +40,8 @@ public class TestWordCounter {
     // then use assertions to verify the correct counts
     // do this for at least two words in the iterator and two not in the iterator
     ArrayList<String> testArray;
-    testArray = new ArrayList<String>(Arrays.asList("one","two","two","three","three","three"));
+    testArray =
+        new ArrayList<String>(Arrays.asList("one", "two", "two", "three", "three", "three"));
 
     fixture.countWords(testArray.iterator());
 
@@ -54,7 +52,5 @@ public class TestWordCounter {
     assertEquals(fixture.getCount("notEvenAWord"), -1);
     assertEquals(fixture.getCount("password"), -1);
     assertEquals(fixture.getCount("Habibi"), -1);
-
-
   }
 }
