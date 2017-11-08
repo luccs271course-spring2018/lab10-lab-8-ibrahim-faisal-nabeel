@@ -1,6 +1,7 @@
 package edu.luc.cs271.wordcount;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -14,7 +15,7 @@ public class WordCounter {
   public WordCounter(final Map<String, Integer> theMap) {
 
     // TODO
-    this.theMap = null;
+    this.theMap = new HashMap<>();
 
   }
 
@@ -23,6 +24,10 @@ public class WordCounter {
 
     // TODO for each word in the iterator, update the corresponding frequency in the map
     // HINT to do this without a conditional, use the getOrDefault method
+    while(words.hasNext()){
+      theMap.getOrDefault(words.next(),);
+    }
+
 
   }
 
@@ -30,6 +35,7 @@ public class WordCounter {
   public int getCount(final String word) {
 
     // TODO
+
     return -1;
 
   }
