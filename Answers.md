@@ -1,7 +1,7 @@
 ###1. Try using a `TreeMap` instead of a `HashMap`. Does this make any difference?
-    -
+    - TreeMap should in concept take longer than HashMap since HashMap uses almost O(1).
 ###2. What happens if you invoke `countWords` multiple times for different String iterators?
-    - It increases the complexity of the program.
+    - It increases the complexity of the program. Meaning we would need to press CTRL+D for everytime the Scanner evaluates.
 ###3. What crucial role does the Iterator abstraction play in making `WordCounter` testable?
     - It allows the wordcounter to assign different keys to the same value. This allows us to locate and count keys to get word count.
 
